@@ -15,8 +15,6 @@ import java.util.List;
 
 /**
  * 数据绑定之RecyclerView
- *
- * 数据刷新有复用问题
  */
 public class RecyclerViewActivity extends AppCompatActivity {
     private ActivityRecyclerViewBinding mBinding;
