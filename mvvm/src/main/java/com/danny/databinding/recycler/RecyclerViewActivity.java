@@ -60,7 +60,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
             Person person = new Person((i % 3 == 0 ? "http://avatar.csdn.net/4/9/8/1_a10615.jpg" : null), (i % 2 == 0 ? "你" : "他"));
             mPeoples.add(person);
         }
-        //官方
+        //官方-有复用问题
 //        mAdapter = new MyAdapter(this, mPeoples);
 
         //通用
