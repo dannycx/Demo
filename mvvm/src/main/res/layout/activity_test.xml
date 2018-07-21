@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/test_data_binding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定的简单使用"/>
+
+    <Button
+        android:id="@+id/test_data_binding_mv_vm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之MVVM模式实现"/>
+
+    <Button
+        android:id="@+id/test_data_binding_custom_attr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之自定义属性"/>
+
+    <Button
+        android:id="@+id/test_data_binding_no_static_custom_attr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之非静态自定义属性绑定数据"/>
+
+    <Button
+        android:id="@+id/test_data_binding_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之ListView绑定数据"/>
+
+    <Button
+        android:id="@+id/test_data_binding_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之RecyclerView绑定数据"/>
+
+    <Button
+        android:id="@+id/test_data_binding_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之Fragment绑定数据"/>
+
+    <Button
+        android:id="@+id/test_data_binding_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据绑定之List集合数据"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal">
+
+    <com.danny.temp.widget.CircleImageView
+        android:id="@+id/layout_menu_item_icon"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        app:border_color="#ccc"
+        app:border_width="0dp"
+        app:border_overlay="true"/>
+
+    <TextView
+        android:id="@+id/layout_menu_item_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

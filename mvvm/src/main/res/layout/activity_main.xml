@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- 变量user， 描述了一个布局中会用到的属性 -->
+        <variable name="student" type="com.danny.databinding.model.Student"/>
+        <variable name="event" type="com.danny.databinding.model.Event"/>
+        <variable name="task" type="com.danny.databinding.model.Task"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{student.no}"/>
+
+        <!-- 布局文件中的表达式使用 “@{}” 的语法 -->
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@{student.name}"/>
+
+        <!-- 注意：函数名和监听器对象必须对应 -->
+        <!-- 函数调用也可以使用 `.` , 如handler.onClickFriend , 不过已弃用 -->
+        <Button
+            android:text="点下试试"
+            android:onClick="@{event::click}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="执行任务"
+            android:onClick="@{() -> event.onTaskClick(task)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

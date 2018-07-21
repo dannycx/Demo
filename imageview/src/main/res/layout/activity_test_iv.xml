@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/test_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iv透明度测试"/>
+
+    <Button
+        android:id="@+id/test_scale_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iv的scaleType测试"/>
+
+    <Button
+        android:id="@+id/test_switch_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iv的切換测试"/>
+
+    <Button
+        android:id="@+id/test_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iv的画廊测试"/>
+
+    <Button
+        android:id="@+id/test_cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义三级缓存工具类"/>
+
+    <Button
+        android:id="@+id/test_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义图形"/>
+
+    <Button
+        android:id="@+id/test_bitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义位图显示"/>
+
+    <Button
+        android:id="@+id/test_five_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奥运五环"/>
+
+    <Button
+        android:id="@+id/test_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="画图"/>
+
+    <Button
+        android:id="@+id/test_picasso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="picasso框架的使用"/>
+</LinearLayout>

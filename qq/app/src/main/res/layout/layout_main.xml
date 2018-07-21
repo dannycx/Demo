@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.danny.temp.widget.ForbidOperateLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_forbid_operate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#18B4ED">
+
+        <ImageView
+            android:id="@+id/main_head_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/main_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/alphabet_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.danny.temp.widget.AlphabetView
+            android:id="@+id/alphabet"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#8000"/>
+
+        <TextView
+            android:id="@+id/alphabet_current"
+            android:layout_centerInParent="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="32sp"
+            android:background="@drawable/alpha_select_bg"/>
+    </RelativeLayout>
+</com.danny.temp.widget.ForbidOperateLinearLayout>

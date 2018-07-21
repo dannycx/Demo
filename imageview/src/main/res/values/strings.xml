@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ImageView</string>
+    <string name="circle">圆</string>
+    <string name="zfx">正方形</string>
+    <string name="jx">矩形</string>
+    <string name="yjjx">圆角矩形</string>
+    <string name="ty">椭圆</string>
+    <string name="sjx">三角形</string>
+    <string name="wjx">五角形</string>
+</resources>
