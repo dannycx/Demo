@@ -6,4 +6,4 @@
 
 [MVVM模式开发以及Databinding使用(demo在mvvm文件夹下)](https://github.com/dannycx/Demo/blob/master/mvvm/mvvm.md)
 
-[QQ主界面效果(demo在Temp文件夹下)](https://github.com/dannycx/Demo/blob/master/Temp)
+[QQ主界面效果(demo在Temp文件夹下)](https://github.com/dannycx/Demo/blob/master/qq/qq.md)
