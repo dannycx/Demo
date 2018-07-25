@@ -2,8 +2,8 @@
 - 帧动画（ＡｎｉｍａｔｉｏｎＤｒａｗａｂｌｅ）：一张张图片组成，类似放电影效果，需要大量图片资源
 - 补间动画（不改变控件实际位置）：旋转动画(RotateAnimation)、透明动画(AlphaAnimation)、缩放动画(ScaleAnimation)、平移动画(TranslateAnimation)
 - 属性动画（改变控件实际位置）：ValueAnimator、ObjectAnimator
-- 布局动画（）：
-- 共享元素（场景动画T）：
+- 布局动画：添加属性android:layoutAnimation=”@anim/layout_animation”,android:animateLayoutChanges,LayoutTransition
+- 共享元素（场景动画T）：两个界面中有相同控件并设置相同id或指定属性android:transitionName="@string/share_element"为相同值
 
 ## 帧动画
 ###### 容易引起OOM，避免使用过多大尺寸图片
@@ -179,6 +179,7 @@ translate.setAnimationListener(new Animation.AnimationListener() {
 ###### API11出现，ValueAnimator, ObjectAnimator, AnimatorSet,效果是在一个时间间隔内完成对象从一个属性值到另一个属性值的改变。可使用nineoldandroids兼容之前版本
 ###### ofObject来做动画的时候，都必须调用setEvaluator显示设置Evaluator，因为系统根本是无法知道，你动画的中间值Object真正是什么类型的。
 
+#### ValueAnimator与ObjectAnimator流程
 ![](https://github.com/dannycx/Demo/blob/master/anim/image/value_object.png)
 
 #### ValueAnimator
@@ -187,7 +188,7 @@ translate.setAnimationListener(new Animation.AnimationListener() {
 - 我们需要对运算过程进行监听，然后自己对控件做动画操作
 
 ##### 使用
-- 创建实例
+- 创建实例,ofInt,ofFloat,ofObject(需指定估值器)
 - 添加监听
 
 #### ObjectAnimator
@@ -203,15 +204,12 @@ translate.setAnimationListener(new Animation.AnimationListener() {
 #### 插值器
 ###### 可以通过重写加速器改变数值进度来改变数值位置
 
-#### 计数器
+#### 估值器
 ######　转换器，他能把小数进度转换成对应的数值位置.可以通过改变Evaluator中进度所对应的数值来改变数值位置。
 - ofInt(0,400)表示指定动画的数字区间，是从0运动到400；
-- 加速器：上面我们讲了，在动画开始后，通过加速器会返回当前动画进度所对应的数字进度，但这个数字进度是百分制的，以小数表示，如0.2
-- Evaluator:我们知道我们通过监听器拿到的是当前动画所对应的具体数值，而不是百分制的进度。那么就必须有一个地方会根据当前的数字进度，将其转化为对应的数值，这个地方就是Evaluator；Evaluator就是将从加速器返回的数字进度转成对应的数字值。所以上部分中，我们讲到的公式：
-- 监听器：我们通过在AnimatorUpdateListener监听器使用animation.getAnimatedValue()函数拿到Evaluator中返回的数字值。
-讲了这么多，Evaluator其实就是一个转换器，他能把小数进度转换成对应的数值位置
-
-
+- 加速器：在动画开始后，通过加速器会返回当前动画进度所对应的数字进度，但这个数字进度是百分制的，以小数表示，如0.2
+- Evaluator:通过监听器拿到的是当前动画对应的具体数值，而不是百分制进度。所以就需要使用Evaluator将从加速器返回的数字进度转成对应的数字值。
+- 监听器：在AnimatorUpdateListener监听器使用agetAnimatedValue()拿到Evaluator中返回的数字值。Evaluator一个转换器，能把小数进度转换成对应的数值
 
 ## 布局动画
 
