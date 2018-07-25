@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:duration="2000"
+        android:valueFrom="10.0"
+        android:valueTo="300.0"
+        android:valueType="floatType"
+        android:propertyName="x"/>
+
+    <objectAnimator
+        android:duration="2000"
+        android:valueType="floatType"
+        android:valueFrom="20.0"
+        android:valueTo="400.0"
+        android:propertyName="y"/>
+</set>
+<!--<set android:ordering=["together" | "sequentially"]>-->
+    <!--android:ordering：表示动画开始顺序。together表示同时开始动画，sequentially表示逐个开始动画； -->

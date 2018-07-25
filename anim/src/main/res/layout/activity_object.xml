@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danny.anim.property.value.PropertyActivity">
+
+    <TextView
+        android:id="@+id/object_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ValueAnimator"
+        android:textColor="#0fa"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <com.danny.anim.property.object.CharacterTextView
+        android:id="@+id/object_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/object_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止动画"/>
+
+    <ImageView
+        android:id="@+id/object_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"/>
+
+    <Button
+        android:id="@+id/object_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的PropertyValuesHolder电话震动"/>
+
+    <Button
+        android:id="@+id/object_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的PropertyValuesHolder"/>
+
+    <Button
+        android:id="@+id/object_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的简单使用"/>
+
+    <com.danny.anim.property.object.PointView
+        android:id="@+id/object_point_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

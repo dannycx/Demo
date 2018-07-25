@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/hello_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="组合动画基本使用"/>
+
+    <Button
+        android:id="@+id/hello_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/hello_btn"
+        android:padding="10dp"
+        android:text="自由组合顺序动画"/>
+
+    <Button
+        android:id="@+id/hello_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_free"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="开始"/>
+
+    <Button
+        android:id="@+id/hello_4"
+        android:layout_below="@id/hello_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="取消"/>
+
+    <TextView
+        android:id="@+id/hello_ni_hao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:background="#ff00ff"
+        android:padding="10dp"
+        android:text="hello ni hao"/>
+
+    <TextView
+        android:id="@+id/hello_world"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#ffff00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Hello world"/>
+</RelativeLayout>

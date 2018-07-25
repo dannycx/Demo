@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danny.anim.property.value.PropertyActivity">
+
+    <TextView
+        android:id="@+id/property_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ValueAnimator"
+        android:textColor="#0fa"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/property_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止动画"/>
+
+    <Button
+        android:id="@+id/property_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移除动画监听"/>
+
+    <Button
+        android:id="@+id/property_clone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="克隆动画"/>
+
+    <Button
+        android:id="@+id/property_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的简单使用"/>
+
+    <Button
+        android:id="@+id/property_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之view移动"/>
+
+    <Button
+        android:id="@+id/property_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之view复杂动画效果"/>
+
+    <Button
+        android:id="@+id/property_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之view多监听"/>
+
+    <Button
+        android:id="@+id/property_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之插值器"/>
+
+    <Button
+        android:id="@+id/property_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之计数器"/>
+
+    <Button
+        android:id="@+id/property_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之颜色计数器"/>
+
+    <Button
+        android:id="@+id/property_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之ofObject()"/>
+
+    <Button
+        android:id="@+id/property_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画的之ofObject()自定义对象"/>
+
+    <com.danny.anim.property.value.PointView
+        android:id="@+id/property_point_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

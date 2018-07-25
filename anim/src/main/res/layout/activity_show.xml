@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.danny.anim.share.ShowActivity">
+
+    <ImageView
+        android:id="@+id/show_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/girl_1"
+        android:scaleType="fitXY"
+        android:transitionName="@string/share_element"/>
+
+    <Button
+        android:id="@+id/shoe_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/shoe_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="2"/>
+    <!--android:transitionName="@string/share_element_btn"-->
+    <Button
+        android:id="@+id/shoe_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="3"/>
+</LinearLayout>

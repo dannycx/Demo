@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp">
+
+    <ImageButton
+        android:id="@+id/multiple_btn"
+        style="@style/MenuStyle"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_btn"/>
+
+    <ImageButton
+        android:id="@+id/multiple_msg"
+        style="@style/MenuItemStyle"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_msg"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/multiple_sina"
+        style="@style/MenuItemStyle"
+        android:background="@null"
+        android:src="@drawable/anim_sina"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/multiple_ali_pay"
+        style="@style/MenuItemStyle"
+        android:background="@null"
+        android:src="@drawable/anim_ali_pay"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/multiple_wechat"
+        style="@style/MenuItemStyle"
+        android:background="@null"
+        android:src="@drawable/anim_wechat"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/multiple_github"
+        style="@style/MenuItemStyle"
+        android:background="@null"
+        android:src="@drawable/anim_github"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+</FrameLayout>

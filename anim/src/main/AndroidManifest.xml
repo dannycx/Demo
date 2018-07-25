@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.danny.anim">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".frame.FrameActivity"/>
+        <activity android:name=".value.TranslateActivity"/>
+        <activity android:name=".value.ScaleActivity"/>
+        <activity android:name=".value.AlphaActivity"/>
+        <activity android:name=".value.RotateActivity"/>
+        <activity android:name=".SkewActivity"/>
+        <activity android:name=".value.CustomActivity"/>
+        <activity android:name=".share.ShareElementActivity"/>
+        <activity android:name=".share.ShowActivity"/>
+        <activity
+            android:name=".share.AActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".share.BActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".nineold.NineOldActivity"/>
+        <activity android:name=".nineold.StarActivity"/>
+        <activity android:name=".property.value.PropertyActivity"/>
+        <activity android:name=".property.object.ObjectActivity"/>
+        <activity android:name=".property.set.SetActivity"/>
+        <activity android:name=".property.xml.XMLActivity"/>
+        <activity android:name=".property.MultipleActivity"/>
+        <activity android:name=".list.ListViewActivity">
+        </activity>
+        <activity android:name=".list.List2Activity">
+        </activity>
+    </application>
+
+</manifest>

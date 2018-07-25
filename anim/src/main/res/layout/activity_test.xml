@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_anim_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帧动画测试"/>
+
+        <Button
+            android:id="@+id/test_anim_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="透明动画测试"/>
+
+        <Button
+            android:id="@+id/test_anim_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放动画测试"/>
+
+        <Button
+            android:id="@+id/test_anim_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平移动画测试"/>
+
+        <Button
+            android:id="@+id/test_anim_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转动画测试"/>
+
+        <Button
+            android:id="@+id/test_anim_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义动画"/>
+
+        <Button
+            android:id="@+id/test_anim_share_element"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共享元素动画"/>
+
+        <Button
+            android:id="@+id/test_anim_transition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转场动画"/>
+
+        <Button
+            android:id="@+id/test_anim_nine_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nineold动画"/>
+
+        <Button
+            android:id="@+id/test_anim_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画之Value"/>
+
+        <Button
+            android:id="@+id/test_anim_object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画之Object"/>
+
+        <Button
+            android:id="@+id/test_anim_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画之组合动画"/>
+
+        <Button
+            android:id="@+id/test_anim_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画之xml"/>
+
+        <Button
+            android:id="@+id/test_anim_multiple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="属性动画之multiple"/>
+
+        <Button
+            android:id="@+id/test_anim_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动画之ListView"/>
+
+        <Button
+            android:id="@+id/test_anim_list_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动画之ListView条目底部进入动画"/>
+
+        <Button
+            android:id="@+id/test_anim_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."/>
+    </LinearLayout>
+</ScrollView>
