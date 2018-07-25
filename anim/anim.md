@@ -179,6 +179,7 @@ translate.setAnimationListener(new Animation.AnimationListener() {
 ###### API11出现，ValueAnimator, ObjectAnimator, AnimatorSet,效果是在一个时间间隔内完成对象从一个属性值到另一个属性值的改变。可使用nineoldandroids兼容之前版本
 ###### ofObject来做动画的时候，都必须调用setEvaluator显示设置Evaluator，因为系统根本是无法知道，你动画的中间值Object真正是什么类型的。
 
+![](https://github.com/dannycx/Demo/blob/master/anim/image/value_object.png)
 
 #### ValueAnimator
 ###### ValueAnimator对指定值区间做动画运算，我们通过对运算过程做监听来自己操作控件。
