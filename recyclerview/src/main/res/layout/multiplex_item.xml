@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="50dp">
+
+    <RelativeLayout
+        android:id="@+id/multiplex_item_rl_1"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/multiplex_item_bg">
+
+        <ImageView
+            android:id="@+id/multiplex_item_food"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:src="@mipmap/multiplex_item_image"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/multiplex_item_food_name"
+        android:layout_below="@id/multiplex_item_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="菜名"
+        android:textColor="#111"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/multiplex_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiplex_item_food_name"
+        android:layout_marginTop="20dp"
+        android:text="￥200.0"
+        android:textSize="24sp"
+        android:textColor="#111"/>
+
+    <ImageButton
+        android:id="@+id/multiplex_item_increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/multiplex_item_add"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/multiplex_item_food_name"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/multiplex_item_count"
+        android:layout_toLeftOf="@id/multiplex_item_increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="12"
+        android:maxLength="2"
+        android:visibility="invisible"
+        android:layout_below="@id/multiplex_item_food_name"
+        android:textSize="24sp"
+        android:textColor="#111"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:id="@+id/multiplex_item_reduce"
+        android:layout_toLeftOf="@id/multiplex_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/multiplex_item_reduce"
+        android:layout_below="@id/multiplex_item_food_name"
+        android:background="@null"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

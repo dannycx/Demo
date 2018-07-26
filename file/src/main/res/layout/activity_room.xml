@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/room_seller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="seller"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/room_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="food_name"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/room_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="price"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="count"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/room_expand_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="expand_1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/room_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="增"/>
+
+            <Button
+                android:id="@+id/room_delete_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="删商品"/>
+
+            <Button
+                android:id="@+id/room_delete_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="删商家"/>
+
+            <Button
+                android:id="@+id/room_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="删所有"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/room_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个数累加改数量"/>
+
+            <Button
+                android:id="@+id/room_update_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="直接改数量"/>
+
+            <Button
+                android:id="@+id/room_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查"/>
+
+            <Button
+                android:id="@+id/room_query_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查所有"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/room_expand_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩展增"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/room_call_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:hint="call_account" />
+
+        <EditText
+            android:id="@+id/room_call_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:hint="call_name" />
+
+        <EditText
+            android:id="@+id/room_call_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:hint="call_count" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/room_call_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增"/>
+
+        <Button
+            android:id="@+id/room_call_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查"/>
+    </LinearLayout>
+</LinearLayout>

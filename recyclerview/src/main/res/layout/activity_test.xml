@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/test_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多手指触摸recyclerview只能响应一个"/>
+
+    <Button
+        android:id="@+id/test_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recyclerview复用解决方法"/>
+
+    <Button
+        android:id="@+id/test_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."/>
+
+    <Button
+        android:id="@+id/test_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带复选框的recyclerview"/>
+
+    <Button
+        android:id="@+id/test_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆形的listView刷新"/>
+</LinearLayout>

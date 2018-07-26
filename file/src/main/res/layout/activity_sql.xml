@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6b909" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left">
+
+        <EditText
+            android:id="@+id/sql_insert_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/sql_insert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sql_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sql_insert_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6b909" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left">
+
+        <EditText
+            android:id="@+id/sql_delete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sql_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sql_delete_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6b909" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left">
+
+        <EditText
+            android:id="@+id/sql_update_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/sql_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sql_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sql_update_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6b909" />
+
+    <Button
+        android:id="@+id/sql_query_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查all" />
+
+    <TextView
+        android:id="@+id/sql_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e6b909" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sql_query_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sql_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sql_query_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
