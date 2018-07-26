@@ -10,5 +10,12 @@
 
 [android动画(源码在anim文件夹下)](https://github.com/dannycx/Demo/blob/master/anim/anim.md)
 
-
 [ListView使用(源码在listview文件夹下)](https://github.com/dannycx/Demo/blob/master/listview/lv.md)
+
+[RecyclerView使用(源码在recyclerview文件夹下)](https://github.com/dannycx/Demo/blob/master/recyclerview/recycler.md)
+
+[file使用(源码在file文件夹下)](https://github.com/dannycx/Demo/blob/master/file/file.md)
+
+[download断点下载(源码在download文件夹下)](https://github.com/dannycx/Demo/blob/master/download/download.md)
+
+[开机自启(源码在broadcast文件夹下)](https://github.com/dannycx/Demo/blob/master/broadcast/boot.md)
